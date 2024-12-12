@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /var/www/pc/backend/
+yarn install
+yarn run migrate:up
+yarn run build
+pm2 reload backend

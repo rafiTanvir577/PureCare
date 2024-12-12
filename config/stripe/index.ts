@@ -1,0 +1,17 @@
+const {
+  STRIPE_PUBLISHABLE_KEY,
+  STRIPE_SECRET_KEY,
+  STRIPE_WH_SECRET_KEY,
+  STRIPE_SUCCESS_URL,
+  STRIPE_SUBSCRIPTION_UPDATED_URL,
+  STRIPE_CANCEL_URL,
+} = process.env;
+
+export const stripeConfig = {
+  pubKey: STRIPE_PUBLISHABLE_KEY || '',
+  secretKey: STRIPE_SECRET_KEY || '',
+  wHSecretKey: STRIPE_WH_SECRET_KEY || '',
+  successUrl: STRIPE_SUCCESS_URL || '',
+  updatedUrl: STRIPE_SUBSCRIPTION_UPDATED_URL || '',
+  cancelUrl: STRIPE_CANCEL_URL || '',
+};
